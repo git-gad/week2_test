@@ -1,0 +1,22 @@
+# hand = [{'rank': 'A', 'suit': 'C'}, {'rank': 'A', 'suit': 'D'}, {'rank': '10', 'suit': 'H'}]
+# i = 0
+# for card in hand[:]:
+#     if card['rank'] == 'A':
+#         hand.append(hand.pop(i))
+#     i += 1
+# print(hand)
+
+# l1 = [1, 2, 3]
+# l2 = [4, 5, 6]
+# l1.extend(l2)
+# print(l1)
+
+hand = [{'rank': 'A', 'suit': 'C'}, {'rank': 'A', 'suit': 'D'}, {'rank': '10', 'suit': 'H'}]
+result = []
+for card in hand:
+    if card['rank'] == 'A':
+        result.append(card)
+    else:
+        result.insert(0, card)
+
+print(result)
